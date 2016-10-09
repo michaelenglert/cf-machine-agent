@@ -6,7 +6,7 @@ The Machine Agent can be used within CloudFoundry to Host [AppDynamics Extension
 ## Prepare
 1. Download the Machine Agent you want to use by `./get-agent.sh <Portal User> <Agent Version X.X.X.X>`
   * The Download Script will also disable the Default Monitors for getting Hardware Metrics in `monitors/*/monitor.xml`
-2. [Alter the configuration as per documentation](https://docs.appdynamics.com/display/latest/Installing+the+Database+Agent)
+2. [Alter the configuration as per documentation](https://docs.appdynamics.com/display/latest/Install+the+Standalone+Machine+Agent)
   * Change `conf/controller-info.xml`
 
 ## Deploy
