@@ -6,7 +6,7 @@ To deploy the Application to CloudFoundry the [Dist Zip Container](https://githu
 
 ## Prepare
 1. Download the Machine Agent you want to use by
-  * by `./get-agent.sh <Portal User> <Agent Version X.X.X.X>`
+  * by `./get-agent.sh <Portal User> <Agent Version X.X.X.X>` (Will Prompt for Password)
     * The Download Script will also disable the Default Monitors for getting Hardware Metrics in `monitors/*/monitor.xml`
   * by downloading manually and unzipping to this directory
 2. [Alter the configuration as per documentation](https://docs.appdynamics.com/display/latest/Install+the+Standalone+Machine+Agent)
