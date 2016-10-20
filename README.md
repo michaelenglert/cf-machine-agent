@@ -1,4 +1,4 @@
-# AppDynamics Machine Agent to deploy as CloudFoundry App
+# AppDynamics Machine Agent for Extensions to deploy as CloudFoundry App
 
 The Machine Agent can be used within CloudFoundry to Host [AppDynamics Extensions](https://community.appdynamics.com/t5/eXchange-Community-AppDynamics/idb-p/extensions)
 
@@ -14,7 +14,8 @@ To deploy the Application to CloudFoundry the [Dist Zip Container](https://githu
 
 ## Deploy
 
-1. `cf push <Application Name>`
+1. Deploy the Agent to CloudFoundry
+  * by `cf push <Machine Agent Name>`
   * The AppDynamics Application Name will be the `space_name` from `VCAP_APPLICATION` by default
   * The AppDynamics Application Name will be the `application_name` from `VCAP_APPLICATION` by default
   * The AppDynamics Node Name will be `application_name:instance_index` from `VCAP_APPLICATION` by default
