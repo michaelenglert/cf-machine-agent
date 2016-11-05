@@ -21,5 +21,8 @@ rm -rf ./cookies.txt machineagent.zip bin/machine-agent* bin/agent-failure-actio
 
 #Disable the Standard Montors
 sed -i -e "s/<enabled>true<\/enabled>/<enabled>false<\/enabled>/g" $(find . -name "monitor.xml")
+#Direct Log Output to Stdout
+sed -i -e "s/ref=\"FileAppender\"/ref=\"ConsoleAppender\"/g" $(find . -name "log4j.xml")
+
 
 exit 0
